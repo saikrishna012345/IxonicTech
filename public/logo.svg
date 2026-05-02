@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C6FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0072FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00C6FF;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#0072FF;stop-opacity:0.15" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Hexagon background -->
+  <polygon
+    points="60,10 95,30 95,70 60,90 25,70 25,30"
+    fill="url(#hexGrad)"
+    stroke="url(#iconGrad)"
+    stroke-width="2"
+    filter="url(#glow)"
+  />
+
+  <!-- Inner lightning bolt / IX mark -->
+  <!-- I bar top -->
+  <rect x="46" y="22" width="14" height="3" rx="1.5" fill="url(#iconGrad)" filter="url(#glow)"/>
+  <!-- I stem -->
+  <rect x="51" y="25" width="4" height="18" rx="1.5" fill="url(#iconGrad)"/>
+  <!-- I bar bottom -->
+  <rect x="46" y="43" width="14" height="3" rx="1.5" fill="url(#iconGrad)"/>
+
+  <!-- X -->
+  <line x1="64" y1="22" x2="80" y2="46" stroke="url(#iconGrad)" stroke-width="3.5" stroke-linecap="round" filter="url(#glow)"/>
+  <line x1="80" y1="22" x2="64" y2="46" stroke="url(#iconGrad)" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Small accent dot -->
+  <circle cx="60" cy="75" r="3" fill="url(#iconGrad)" filter="url(#glow)"/>
+
+  <!-- Company name -->
+  <text
+    x="112"
+    y="58"
+    font-family="'Segoe UI', 'Inter', 'Arial', sans-serif"
+    font-size="32"
+    font-weight="700"
+    letter-spacing="0.5"
+    fill="url(#iconGrad)"
+    filter="url(#glow)"
+  >Ixonic</text>
+  <text
+    x="247"
+    y="58"
+    font-family="'Segoe UI', 'Inter', 'Arial', sans-serif"
+    font-size="32"
+    font-weight="300"
+    letter-spacing="1"
+    fill="#cccccc"
+  >Tech</text>
+
+  <!-- Tagline -->
+  <text
+    x="113"
+    y="76"
+    font-family="'Segoe UI', 'Inter', 'Arial', sans-serif"
+    font-size="10"
+    font-weight="400"
+    letter-spacing="3"
+    fill="#666666"
+  >INNOVATION · TECHNOLOGY</text>
+</svg>
