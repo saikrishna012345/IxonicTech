@@ -41,12 +41,13 @@ export default function About() {
               — period.
             </motion.h2>
             <motion.p variants={fadeUp} className="text-slate-400 leading-[1.8] mb-4">
-              IxonicTech is a new-generation software startup, founded in May 2026 with one clear purpose: to build fast,
-              scalable, and impactful software for businesses ready to grow.
+              IxonicTech is an innovative tech startup providing end-to-end software development and digital services
+              for businesses ready to grow. Launched in May 2026, we combine sharp technical execution with a genuine
+              commitment to client success.
             </motion.p>
             <motion.p variants={fadeUp} className="text-slate-400 leading-[1.8] mb-10">
-              We're lean, focused, and already delivering. Our first client, InduMart, trusted us with their entire B2B
-              marketplace platform — and that trust sets the standard for every project we take on.
+              We currently serve InduMart — a full-scale B2B marketplace we designed and built from scratch — and we're
+              actively expanding. Every engagement we take on receives the same focused attention and quality-first approach.
             </motion.p>
 
             {/* Stats grid */}
